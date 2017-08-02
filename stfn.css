@@ -1,0 +1,39 @@
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-variant: regular;
+	font-weight: 500;
+    line-height: 1.4em;
+    color: #fff
+}
+
+.skills {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.skill {
+    flex: 1;
+    margin-bottom: 1px;
+    padding: 5px;
+    height: 23px; 
+    background-color: #DCC7AA;
+}
+
+.blueberry {
+    background-color: #6B7A8F; 
+}
+
+.apricot {
+    background-color: #F7882F; 
+}
+
+.citrus {
+    background-color: #F7C331; 
+}
+
+.applecore {
+    background-color: #DCC7AA; 
+}
