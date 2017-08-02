@@ -1,12 +1,20 @@
 html {
 	font-family: 'Open Sans', sans-serif;
-	font-variant: regular;
-	font-weight: 500;
     line-height: 1.4em;
-    color: #fff
+    color: #6B7A8F;
+    background-color: #DCC7AA;
+    font-size: 14px;
 }
 
-.skills {
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+section {
     max-width: 300px;
     display: flex;
     flex-direction: column; 
@@ -14,12 +22,17 @@ html {
     align-items: stretch;
 }
 
-.skill {
+section div, section a {
     flex: 1;
     margin-bottom: 1px;
     padding: 5px;
-    height: 23px; 
-    background-color: #DCC7AA;
+    height: 20px; 
+    background-color: #6B7A8F; 
+    color: #DCC7AA;
+}
+
+section.contacts {
+    margin-top: 30px;
 }
 
 .blueberry {
@@ -36,4 +49,11 @@ html {
 
 .applecore {
     background-color: #DCC7AA; 
+}
+
+email::after {
+    content: attr(data-domain);
+}
+email::before {
+    content: attr(data-user) "\0040";
 }
