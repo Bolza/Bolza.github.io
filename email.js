@@ -6,7 +6,7 @@ function mailTo() {
 
 function copyEmail() {
     var textArea = document.createElement("textarea");
-    var text = 'ilbolza@gmail.com';
+    var text = 'ilbolza';
     document.body.appendChild(textArea);
     textArea.value = text;
     textArea.select();
