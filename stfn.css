@@ -1,5 +1,5 @@
 html {
-	font-family: 'Roboto', 'Open Sans', Verdana, sans-serif;
+	font-family: 'Roboto', Verdana, sans-serif;
     line-height: 1.4em;
     color: #6B7A8F;
     background-color: #DCC7AA;
@@ -21,11 +21,11 @@ section {
     flex-direction: column; 
     justify-content: space-around;
     align-items: stretch;
-    /* background: white; */
 }
 
 section > div, 
-section > a {
+section > a, 
+section > span {
     flex: 1;
     display: flex;
     padding-left: 10px;
@@ -33,20 +33,24 @@ section > a {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1px;
-    height: 25px; 
+    height: 32px; 
     color: #DCC7AA;
     background-color: #6B7A8F;
 }
 
+.disclaimer,
 .contacts {
     margin-top: 30px;
+}
+.contacts a {
+    flex-grow: 1;
 }
 
 .copy {
     border-radius: 5px;
     background-color: #38475C;
     cursor: pointer;
-    padding: 1px;
+    padding: 4px;
     margin-right: 10px;
 }
 .copy:hover {
@@ -69,10 +73,3 @@ section > a {
 .applecore {
     background-color: #DCC7AA; 
 }
-
-/* email::after {
-    content: attr(data-domain);
-}
-email::before {
-    content: attr(data-user) "\0040";
-} */

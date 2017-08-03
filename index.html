@@ -7,8 +7,7 @@
         <meta name="description" content="Stefano Sergio, Software Developer, London, UK">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
-        <link rel="stylesheet" href="./stfn.css">
+        <link rel="stylesheet" href="./stfn.css?v=0006">
     </head>
     <body>
         <h1>Stefano Sergio</h1>
@@ -16,24 +15,28 @@
         <h3>London, UK</h1>
 
         <section class="skills">
-            <div class="skill">Javascript and TypeScript</div>
-            <div class="skill">AngularJS, Angular 2+</div>
-            <div class="skill">ReactJS and Redux and ReactNative</div>
-            <div class="skill">Unity3D and C#</div>
-            <div class="skill">Unit Testing, E2E Tests</div>
-            <div class="skill">Agile Methodologies and TDD</div>
+            <div class="skill">Javascript / TypeScript</div>
+            <div class="skill">AngularJS / Angular 2+</div>
+            <div class="skill">ReactJS / Redux / ReactNative</div>
+            <div class="skill">Unity3D / C#</div>
+            <div class="skill">Unit Testing / E2E Tests</div>
+            <div class="skill">Agile Methodologies / TDD</div>
         </section>
 
         <section class="contacts">
-            <a>
-                <email data-user="ilbolza" data-domain="gmail.com" onclick="mailTo.call(this)">Email</email>
+            <span>
+                <a onclick="mailTo.call(this)">Email</a>
                 <div class="copy" onclick="copyEmail.call(this)">copy</div> 
-            </a>
+            </span>
             <a href="https://github.com/Bolza">GitHub</adiv>
             <a href="https://www.linkedin.com/in/stefanosergio">Linkedin</adiv>
             <a href="https://stackoverflow.com/users/1271349/bolza">Stackoverflow</adiv>
         </section>
+
+        <section class="disclaimer">
+            <div>No, I'm not colorblind. Yes, I actually like these colors.</div>
+        </section>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-    <script src="./email.js"></script>
+    <script src="./email.js?v=0006"></script>
 </html>
