@@ -6,9 +6,10 @@ function mailTo() {
 
 function copyEmail() {
     var textArea = document.createElement("textarea");
-    var text = this.attributes['data-user'].value + '@' + this.attributes['data-domain'].value;
+    var text = 'ilbolza@gmail.com';
     document.body.appendChild(textArea);
     textArea.value = text;
     textArea.select();
     document.execCommand('copy');
+    document.body.removeChild(textArea);
 }

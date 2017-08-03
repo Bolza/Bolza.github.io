@@ -1,5 +1,5 @@
 html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', 'Open Sans', Verdana, sans-serif;
     line-height: 1.4em;
     color: #6B7A8F;
     background-color: #DCC7AA;
@@ -15,45 +15,64 @@ a:hover {
 }
 
 section {
-    max-width: 300px;
+    max-width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column; 
     justify-content: space-around;
     align-items: stretch;
+    /* background: white; */
 }
 
-section div, section a {
+section > div, 
+section > a {
     flex: 1;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 1px;
-    padding: 5px;
-    height: 20px; 
-    background-color: #6B7A8F; 
+    height: 25px; 
     color: #DCC7AA;
+    background-color: #6B7A8F;
 }
 
-section.contacts {
+.contacts {
     margin-top: 30px;
 }
 
-.blueberry {
+.copy {
+    border-radius: 5px;
+    background-color: #38475C;
+    cursor: pointer;
+    padding: 1px;
+    margin-right: 10px;
+}
+.copy:hover {
+    background-color: #051429;
+    text-decoration: none;
+}
+
+.blueberry{
     background-color: #6B7A8F; 
+}
+
+.citrus {
+    background-color: #F7C331;
 }
 
 .apricot {
     background-color: #F7882F; 
 }
 
-.citrus {
-    background-color: #F7C331; 
-}
-
 .applecore {
     background-color: #DCC7AA; 
 }
 
-email::after {
+/* email::after {
     content: attr(data-domain);
 }
 email::before {
     content: attr(data-user) "\0040";
-}
+} */

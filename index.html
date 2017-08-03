@@ -6,7 +6,8 @@
         <title>Stefano Sergio, Software Developer</title>
         <meta name="description" content="Stefano Sergio, Software Developer, London, UK">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
         <link rel="stylesheet" href="./stfn.css">
     </head>
     <body>
@@ -25,12 +26,14 @@
 
         <section class="contacts">
             <a>
-                <email data-user="ilbolza" data-domain="gmail.com" onclick="mailTo.call(this)"></email>
-                <!-- <span onclick="copyEmail.call(this)">copy</span> -->
+                <email data-user="ilbolza" data-domain="gmail.com" onclick="mailTo.call(this)">Email</email>
+                <div class="copy" onclick="copyEmail.call(this)">copy</div> 
             </a>
             <a href="https://github.com/Bolza">GitHub</adiv>
             <a href="https://www.linkedin.com/in/stefanosergio">Linkedin</adiv>
+            <a href="https://stackoverflow.com/users/1271349/bolza">Stackoverflow</adiv>
         </section>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
     <script src="./email.js"></script>
 </html>
